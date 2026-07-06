@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'Marjorie Black';
+    src: url('Fonts/MarjorieTest-Black-BF66fe062f77d12.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Marjorie';
+    src: url('Fonts/MarjorieTest-Regular-BF66fe062fec091.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Marjorie';
+    
+}
+ body{
+    background-image: url(assets/z.others/black\ coffee.jpg);
+ }
+/* About Section */
+.about-section {
+    background-image: url(assets/z.others/black\ coffee.jpg);
+    text-align: center;
+    padding: 50px 0;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Dot Indicator */
+.dot-indicator {
+    margin: 10px 0 30px;
+}
+
+.dot-indicator span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #fff88b; /*this theme color*/
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+/* About Container */
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin: auto;
+    background: #fff;
+    box-shadow: 0px 4px 20px rgba(22, 255, 239, 0.418);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* About Text */
+.about-text {
+    flex: 1;
+    padding: 40px;
+    text-align: left;
+    background-color: white;
+}
+
+.about-text h2 {
+    font-size: 48px;
+    color: #204e6b; /*this theme color*/
+    margin-bottom: 10px;
+}
+
+.about-text p {
+    font-size: 18px;
+    color: #204e6b; /*this theme color*/
+    line-height: 1.6;
+}
+
+/* Back home */
+.read-more-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 2px solid #204e6b; /*this theme color*/
+    color: #204e6b; /*this theme color*/
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.read-more-btn:hover {
+    background-color: #204e6b; /*this theme color*/
+    color: white;
+}
+
+/* About Image */
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0px;
+}
+
+.about-image img:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0 64px #0b5858;;
+    transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.5s ease-in-out;
+}

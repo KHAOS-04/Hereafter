@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+<div class="bg">
+    <section class="contact-section">
+        <div class="contact-container">
+            <h2 class="contact-title">• KEEP IN TOUCH •</h2>
+            <div class="contact-icon">
+                <img src="assets/z.others/icons/phone.png" alt="Phone Icon">
+            </div>
+            <p>We’d love to hear from you! Whether you have a question, feedback, or just want to say hello, feel free to reach out.</p>
+            <br>
+
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="MY NAME IS" required>
+                    <input type="email" name="email" placeholder="MY E-MAIL IS" required>
+                </div>
+                
+                <input type="text" name="number" placeholder="MY NUMBER IS">
+
+                <select name="subject">
+                    <option value="" disabled selected>SUBJECT LINE</option>
+                    <option value="general">General Inquiry</option>
+                    <option value="support">Customer Support</option>
+                    <option value="feedback">Feedback</option>
+                </select>
+
+                <textarea name="message" placeholder="I’D LIKE TO CHAT ABOUT" rows="3"></textarea>
+
+                <button type="submit" class="submit-btn">SEND MESSAGE</button>
+            </form>
+        </div>
+    </section>
+</div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Contact Section */
+.contact-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Blurred Background */
+.contact-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(assets/Interior/03.jpg) center/cover no-repeat;
+    filter: blur(4px); /* Adjust blur strength */
+    z-index: -1; /* Send it behind everything */
+}
+
+/* Contact Container */
+.contact-container {
+    background-color: #fff;
+    padding: 40px;
+    width: 400px;
+    text-align: center;
+    border: 2px solid #333;
+    position: relative;
+    z-index: 1; /* Ensure form is above the blurred background */
+}
+
+/* Title */
+.contact-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Contact Icon */
+.contact-icon img {
+    width: 40px;
+    margin-bottom: 20px;
+}
+
+/* Contact Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group input {
+    width: 48%;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #333;
+    background: transparent;
+    font-size: 14px;
+    outline: none;
+}
+
+/* Submit Button */
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #333;
+    background: transparent;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #333;
+    color: white;
+}
+
+p {
+    font-family: 'Arial', sans-serif;   
+}
